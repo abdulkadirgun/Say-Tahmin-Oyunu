@@ -29,7 +29,7 @@ public class OyunAnaSayfa extends AppCompatActivity {
         randomSayi = (int)(Math.random()*101);
         buttonTahmin = findViewById(R.id.button2);
         kalanHak = findViewById(R.id.textView3);
-        kalanHak.setText("Kalan Hak: 5 (Sayı:" + randomSayi + ")");
+        kalanHak.setText("Kalan Hak: 5");
         yonlendir = findViewById(R.id.textView4);
         tahmin = findViewById(R.id.editTextTextPersonName);
 
@@ -48,6 +48,7 @@ public class OyunAnaSayfa extends AppCompatActivity {
                     Intent gecis = new Intent(getApplicationContext(), OyunSonuc.class);
                     gecis.putExtra("sonuc",true);
                     startActivity(gecis);
+                    finish();
                     return;
                 }
 
@@ -56,6 +57,7 @@ public class OyunAnaSayfa extends AppCompatActivity {
                     gecis.putExtra("sonuc",false);
                     gecis.putExtra("sayi",randomSayi);
                     startActivity(gecis);
+                    finish();
                     return;
                 }
 

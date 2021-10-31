@@ -42,6 +42,7 @@ public class OyunSonuc extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gecis = new Intent(getApplicationContext(),OyunAnaSayfa.class);
                 startActivity(gecis);
+                finish();
             }
         });
 
