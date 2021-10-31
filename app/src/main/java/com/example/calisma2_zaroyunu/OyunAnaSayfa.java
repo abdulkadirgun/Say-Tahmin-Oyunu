@@ -8,18 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.Scanner;
 
 public class OyunAnaSayfa extends AppCompatActivity {
     public Button buttonTahmin;
-    public TextView kalanHak;
-    public TextView yonlendir;
+    public TextView kalanHak, yonlendir;
     public EditText tahmin;
-    public  int gelenTahmin;
-    public  int randomSayi;
-    public int sayac = 5;
+    public  int gelenTahmin, randomSayi, sayac = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
